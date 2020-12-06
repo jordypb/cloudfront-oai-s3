@@ -18,3 +18,8 @@ rendered
 .idea
 
 .DS_Store
+
+# cache files
+__pycache__/
+*.pyc
+*.swp
