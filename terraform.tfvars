@@ -1,6 +1,6 @@
 
 ##### ENV #######
 
-tag_environment = "qa"    
+tag_environment = "stage"
 region          = "us-east-2"
 

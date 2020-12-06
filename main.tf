@@ -2,6 +2,7 @@
 resource "aws_s3_bucket" "saleor_frontend_dashboard" {
   bucket = "saleor-frontend-dashboard-${var.tag_environment}"
   acl    = "private"
+  policy = data.aws_iam_policy_document.s3_policy.json
 
   tags = {
     Name = "saleor-frontend-dashboard-${var.tag_environment}"
