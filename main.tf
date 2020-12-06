@@ -117,3 +117,7 @@ resource "aws_cloudfront_distribution" "cf_saleor_frontend_dashboard" {
     cloudfront_default_certificate = true
   }
 }
+
+terraform {
+  backend "s3" {}
+}
